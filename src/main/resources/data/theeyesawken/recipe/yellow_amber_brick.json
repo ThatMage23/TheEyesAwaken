@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": "theeyesawaken:yellow_amber",
+  "result": {
+    "id": "theeyesawaken:yellow_amber_brick"
+  }
+}

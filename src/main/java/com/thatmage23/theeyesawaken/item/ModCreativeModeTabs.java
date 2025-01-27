@@ -40,6 +40,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ORANGE_AMBER_DEEPSLATE_ORE.get());
                         output.accept(ModBlocks.YELLOW_AMBER_DEEPSLATE_ORE.get());
                         output.accept(ModBlocks.RED_AMBER_DEEPSLATE_ORE.get());
+                        output.accept(ModItems.YELLOW_AMBER_BRICK.get());
+                        output.accept(ModItems.RED_AMBER_BRICK.get());
                     })
                     .build());
 

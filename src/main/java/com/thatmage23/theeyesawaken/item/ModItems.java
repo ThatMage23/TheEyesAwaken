@@ -35,7 +35,11 @@ public class ModItems {
     public static final RegistryObject<Item> RED_CUT_AMBER =ITEMS.register("red_cut_amber",()-> new Item(new Item.Properties()
             .setId(ITEMS.key("red_cut_amber"))));
 
+    public static final RegistryObject<Item> YELLOW_AMBER_BRICK =ITEMS.register("yellow_amber_brick",()-> new Item(new Item.Properties()
+            .setId(ITEMS.key("yellow_amber_brick"))));
 
+    public static final RegistryObject<Item> RED_AMBER_BRICK =ITEMS.register("red_amber_brick",()-> new Item(new Item.Properties()
+            .setId(ITEMS.key("red_amber_brick"))));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);}}
