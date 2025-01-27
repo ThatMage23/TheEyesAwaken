@@ -1,0 +1,5 @@
+{
+  "parent":"minecraft:item/generated",
+  "textures":{
+  "layer0":  "theeyesawaken:item/red_cut_amber"}
+}
