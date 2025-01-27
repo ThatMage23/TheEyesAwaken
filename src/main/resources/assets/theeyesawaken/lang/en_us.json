@@ -9,5 +9,20 @@
   "item.theeyesawaken.yellow_amber": "Yellow Amber",
   "item.theeyesawaken.yellow_cut_amber": "Yellow Cut Amber",
   "item.theeyesawaken.red_amber": "Red Amber",
-  "item.theeyesawaken.red_cut_amber": "Red Cut Amber"
+  "item.theeyesawaken.red_cut_amber": "Red Cut Amber",
+  "item.theeyesawaken.orange_amber_block": "Orange Amber Block",
+    "item.theeyesawaken.yellow_amber_block": "Yellow Amber Block",
+    "item.theeyesawaken.red_amber_block": "Red Amber Block",
+    "item.theeyesawaken.yellow_amber_bricks": "Yellow Amber Bricks",
+    "item.theeyesawaken.red_amber_bricks": "Red Amber Bricks",
+    "item.theeyesawaken.orange_amber_ore": "Orange Amber Ore",
+    "item.theeyesawaken.yellow_amber_ore": "Yellow Amber Ore",
+    "item.theeyesawaken.red_amber_ore": "Red Amber Ore",
+    "item.theeyesawaken.amber_ore": "Amber Ore",
+    "item.theeyesawaken.amber_deepslate_ore": "Amber Deepslate Ore",
+    "item.theeyesawaken.orange_amber_deepslate_ore": "Orange Amber Deepslate Ore",
+    "item.theeyesawaken.yellow_amber_deepslate_ore": "Yellow Amber Deepslate Ore",
+    "item.theeyesawaken.red_amber_deepslate_ore": "Red Amber Deepslate Ore"
+
+
 }

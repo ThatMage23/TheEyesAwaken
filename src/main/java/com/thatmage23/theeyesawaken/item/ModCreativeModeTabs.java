@@ -27,6 +27,19 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.YELLOW_CUT_AMBER.get());
                         output.accept(ModItems.RED_AMBER.get());
                         output.accept(ModItems.RED_CUT_AMBER.get());
+                        output.accept(ModBlocks.ORANGE_AMBER_BLOCK.get());
+                        output.accept(ModBlocks.YELLOW_AMBER_BLOCK.get());
+                        output.accept(ModBlocks.RED_AMBER_BLOCK.get());
+                        output.accept(ModBlocks.YELLOW_AMBER_BRICKS.get());
+                        output.accept(ModBlocks.RED_AMBER_BRICKS.get());
+                        output.accept(ModBlocks.AMBER_ORE.get());
+                        output.accept(ModBlocks.ORANGE_AMBER_ORE.get());
+                        output.accept(ModBlocks.YELLOW_AMBER_ORE.get());
+                        output.accept(ModBlocks.RED_AMBER_ORE.get());
+                        output.accept(ModBlocks.AMBER_DEEPSLATE_ORE.get());
+                        output.accept(ModBlocks.ORANGE_AMBER_DEEPSLATE_ORE.get());
+                        output.accept(ModBlocks.YELLOW_AMBER_DEEPSLATE_ORE.get());
+                        output.accept(ModBlocks.RED_AMBER_DEEPSLATE_ORE.get());
                     })
                     .build());
 

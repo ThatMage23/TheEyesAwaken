@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "theeyesawaken:block/red_amber_deepslate_ore"
+  }
+}
