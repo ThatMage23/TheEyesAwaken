@@ -51,13 +51,6 @@ public class TheEyesAwaken {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
 
-        public static final RegistryObject<Item> STAR_DUST = ITEMS.register("star_dust",
-                () -> new Item(new Item.Properties()
-                        .setId(ITEMS.key("star_dust"))
-                )
-        );
-
-
     public static final RegistryObject<Block> BUSH_LEAVES = BLOCKS.register("bush_leaves",
         () -> new Block(BlockBehaviour.Properties.of()
             .setId(BLOCKS.key("bush_leaves"))
@@ -73,32 +66,22 @@ public class TheEyesAwaken {
                 .setId(ITEMS.key("bush_leaves")))
     );
 
-
-
-
-    public static final RegistryObject<Item> MOSS_LARVA = ITEMS.register("moss_larva",
-        () -> new Item(new Item.Properties()
-            .setId(ITEMS.key("moss_larva"))
-            .food(new FoodProperties.Builder()
-                .alwaysEdible()
-                .nutrition(1)
-                .saturationModifier(2f)
-                .build()
-            )
-        )
-    );
-
-
-
-
     public static final RegistryObject<CreativeModeTab> EYES_TAB = CREATIVE_MODE_TABS.register("eyes_tab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> MOSS_LARVA.get().getDefaultInstance())
-            .title(Component.translatable("Eyes Tab"))
+            .icon(() -> ModItems.MOSS_LARVA.get().getDefaultInstance())
+            .title(Component.translatable("The Eyes Awaken Items"))
             .displayItems((parameters, output) -> {
-                output.accept(MOSS_LARVA.get());
-                output.accept(STAR_DUST.get());
-                output.accept(BUSH_LEAVES.get());
+                output.accept(ModItems.MOSS_LARVA.get());
+                output.accept(ModItems.FAYE_DUST.get());
+                output.accept(ModItems.PIXIE_DUST.get());
+                output.accept(ModItems.ORANGE_AMBER.get());
+                output.accept(ModItems.ORANGE_CUT_AMBER.get());
+                output.accept(ModItems.YELLOW_AMBER.get());
+                output.accept(ModItems.YELLOW_CUT_AMBER.get());
+                output.accept(ModItems.RED_AMBER.get());
+                output.accept(ModItems.RED_CUT_AMBER.get());
+                output.accept(ModItems.YELLOW_AMBER_BRICK.get());
+                output.accept(ModItems.RED_AMBER_BRICK.get());
             }).build());
 
     public TheEyesAwaken(FMLJavaModLoadingContext context) {
@@ -145,9 +128,9 @@ public class TheEyesAwaken {
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
             event.accept(BUSH_LEAVES_ITEM);
         if (event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS)
-            event.accept(STAR_DUST);
+            event.accept(ModItems.FAYE_DUST);
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS)
-            event.accept(MOSS_LARVA);
+            event.accept(ModItems.MOSS_LARVA);
         if (event.getTabKey()==CreativeModeTabs.REDSTONE_BLOCKS)
             event.accept(ModItems.PIXIE_DUST);
         if (event.getTabKey()== CreativeModeTabs.COLORED_BLOCKS)

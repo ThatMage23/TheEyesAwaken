@@ -2,6 +2,7 @@ package com.thatmage23.theeyesawaken.item;
 
 import com.thatmage23.theeyesawaken.TheEyesAwaken;
 import com.thatmage23.theeyesawaken.block.ModBlocks;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -40,6 +41,28 @@ public class ModItems {
 
     public static final RegistryObject<Item> RED_AMBER_BRICK =ITEMS.register("red_amber_brick",()-> new Item(new Item.Properties()
             .setId(ITEMS.key("red_amber_brick"))));
+
+    public static final RegistryObject<Item> FAYE_DUST = ITEMS.register("faye_dust",
+            () -> new Item(new Item.Properties()
+                    .setId(ITEMS.key("faye_dust"))
+            )
+    );
+
+    public static final RegistryObject<Item> MOSS_LARVA = ITEMS.register("moss_larva",
+            () -> new Item(new Item.Properties()
+                    .setId(ITEMS.key("moss_larva"))
+                    .food(new FoodProperties.Builder()
+                            .alwaysEdible()
+                            .nutrition(1)
+                            .saturationModifier(2f)
+                            .build()
+                    )
+            )
+    );
+
+
+
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);}}

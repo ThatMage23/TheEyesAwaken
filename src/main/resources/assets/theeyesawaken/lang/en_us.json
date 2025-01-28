@@ -1,6 +1,6 @@
 {
   "item.theeyesawaken.moss_larva": "Moss Larva",
-  "item.theeyesawaken.star_dust": "Star Dust",
+  "item.theeyesawaken.faye_dust": "Faye Dust",
   "item.theeyesawaken.pixie_dust": "Pixie Dust",
   "item.theeyesawaken.bush_leaves": "Pale Bush Leaves",
   "item.theeyesawaken.faye_glass": "Faye Glass",
@@ -24,7 +24,8 @@
     "item.theeyesawaken.yellow_amber_deepslate_ore": "Yellow Amber Deepslate Ore",
     "item.theeyesawaken.red_amber_deepslate_ore": "Red Amber Deepslate Ore",
     "item.theeyesawaken.yellow_amber_brick": "Yellow Amber Brick",
-    "item.theeyesawaken.red_amber_brick": "Red Amber Brick"
+    "item.theeyesawaken.red_amber_brick": "Red Amber Brick",
+    "item.theeyesawaken.pixie_glass": "Pixie Glass"
 
 
 }

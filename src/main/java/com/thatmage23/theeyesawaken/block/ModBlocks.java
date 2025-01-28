@@ -25,6 +25,11 @@ public class ModBlocks {
             ()-> new Block(BlockBehaviour.Properties.of()
             .strength(1).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().setId(BLOCKS.key("faye_glass"))));
 
+    public static final RegistryObject<Block> PIXIE_GLASS = registryBlock("pixie_glass",
+            ()-> new Block(BlockBehaviour.Properties.of()
+                    .strength(1).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().setId(BLOCKS.key("pixie_glass"))));
+
+
     public static final RegistryObject<Block> ORANGE_AMBER_BLOCK = registryBlock("orange_amber_block",
             ()-> new Block(BlockBehaviour.Properties.of()
             .strength(3).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().setId(BLOCKS.key("orange_amber_block"))));
