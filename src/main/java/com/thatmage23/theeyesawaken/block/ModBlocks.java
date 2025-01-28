@@ -3,9 +3,11 @@ package com.thatmage23.theeyesawaken.block;
 import com.thatmage23.theeyesawaken.TheEyesAwaken;
 import com.thatmage23.theeyesawaken.item.ModItems;
 import net.minecraft.references.Items;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -29,7 +31,6 @@ public class ModBlocks {
             ()-> new Block(BlockBehaviour.Properties.of()
                     .strength(1).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().setId(BLOCKS.key("pixie_glass"))));
 
-
     public static final RegistryObject<Block> ORANGE_AMBER_BLOCK = registryBlock("orange_amber_block",
             ()-> new Block(BlockBehaviour.Properties.of()
             .strength(3).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().setId(BLOCKS.key("orange_amber_block"))));
@@ -51,36 +52,36 @@ public class ModBlocks {
                     .strength(5).requiresCorrectToolForDrops().setId(BLOCKS.key("red_amber_bricks"))));
 
     public static final RegistryObject<Block> ORANGE_AMBER_ORE = registryBlock("orange_amber_ore",
-            ()-> new Block(BlockBehaviour.Properties.of()
+            ()-> new DropExperienceBlock(UniformInt.of(2,4), BlockBehaviour.Properties.of()
                     .strength(4).requiresCorrectToolForDrops().setId(BLOCKS.key("orange_amber_ore"))));
 
     public static final RegistryObject<Block> YELLOW_AMBER_ORE = registryBlock("yellow_amber_ore",
-            ()-> new Block(BlockBehaviour.Properties.of()
+            ()-> new DropExperienceBlock(UniformInt.of(2,4),BlockBehaviour.Properties.of()
                     .strength(4).requiresCorrectToolForDrops().setId(BLOCKS.key("yellow_amber_ore"))));
 
     public static final RegistryObject<Block> RED_AMBER_ORE = registryBlock("red_amber_ore",
-            ()-> new Block(BlockBehaviour.Properties.of()
-                    .strength(4).requiresCorrectToolForDrops().setId(BLOCKS.key("red_amber_ore"))));
+            ()-> new DropExperienceBlock(UniformInt.of(2,4),(BlockBehaviour.Properties.of()
+                    .strength(4).requiresCorrectToolForDrops().setId(BLOCKS.key("red_amber_ore")))));
 
     public static final RegistryObject<Block> AMBER_ORE = registryBlock("amber_ore",
-            ()-> new Block(BlockBehaviour.Properties.of()
-                    .strength(4).requiresCorrectToolForDrops().setId(BLOCKS.key("amber_ore"))));
+            ()-> new DropExperienceBlock(UniformInt.of(2,4),(BlockBehaviour.Properties.of()
+                    .strength(4).requiresCorrectToolForDrops().setId(BLOCKS.key("amber_ore")))));
 
     public static final RegistryObject<Block> ORANGE_AMBER_DEEPSLATE_ORE = registryBlock("orange_amber_deepslate_ore",
-            ()-> new Block(BlockBehaviour.Properties.of()
-                    .strength(4).requiresCorrectToolForDrops().setId(BLOCKS.key("orange_amber_deepslate_ore"))));
+            ()-> new DropExperienceBlock(UniformInt.of(3,6),(BlockBehaviour.Properties.of()
+                    .strength(4).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).setId(BLOCKS.key("orange_amber_deepslate_ore")))));
 
     public static final RegistryObject<Block> YELLOW_AMBER_DEEPSLATE_ORE = registryBlock("yellow_amber_deepslate_ore",
-            ()-> new Block(BlockBehaviour.Properties.of()
-                    .strength(4).requiresCorrectToolForDrops().setId(BLOCKS.key("yellow_amber_deepslate_ore"))));
+            ()-> new DropExperienceBlock(UniformInt.of(3,6),(BlockBehaviour.Properties.of()
+                    .strength(4).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).setId(BLOCKS.key("yellow_amber_deepslate_ore")))));
 
     public static final RegistryObject<Block> RED_AMBER_DEEPSLATE_ORE = registryBlock("red_amber_deepslate_ore",
-            ()-> new Block(BlockBehaviour.Properties.of()
-                    .strength(4).requiresCorrectToolForDrops().setId(BLOCKS.key("red_amber_deepslate_ore"))));
+            ()-> new DropExperienceBlock(UniformInt.of(3,6),(BlockBehaviour.Properties.of()
+                    .strength(4).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).setId(BLOCKS.key("red_amber_deepslate-ore")))));
 
     public static final RegistryObject<Block> AMBER_DEEPSLATE_ORE = registryBlock("amber_deepslate_ore",
-            ()-> new Block(BlockBehaviour.Properties.of()
-                    .strength(4).requiresCorrectToolForDrops().setId(BLOCKS.key("amber_deepslate-ore"))));
+            ()-> new DropExperienceBlock(UniformInt.of(3,6),(BlockBehaviour.Properties.of()
+                    .strength(4).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).setId(BLOCKS.key("amber_deepslate-ore")))));
 
 
 

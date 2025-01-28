@@ -1,0 +1,20 @@
+{
+  "values": [
+    "theeyesawaken:amber_ore",
+    "theeyesawaken:orange_amber_ore",
+    "theeyesawaken:yellow_amber_ore",
+    "theeyesawaken:red_amber_ore",
+
+    "theeyesawaken:amber_deepslate_ore",
+    "theeyesawaken:orange_amber_deepslate_ore",
+    "theeyesawaken:yellow_amber_deepslate_ore",
+    "theeyesawaken:red_amber_deepslate_ore",
+
+    "theeyesawaken:orange_amber_block",
+    "theeyesawaken:yellow_amber_block",
+    "theeyesawaken:red_amber_block",
+
+    "theeyesawaken:yellow_amber_bricks",
+    "theeyesawaken:red_amber_bricks"
+  ]
+}
